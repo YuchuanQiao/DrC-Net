@@ -1,7 +1,7 @@
 """
 Example script to predict a displacement field from paired PE FOD images with DrC-Net models.
 
-python predict.py --datalist whole_data.txt --gpu 0 --model ../model/1500.h5 --num_feature 6 --exp_name DrC_net 
+python predict.py --datalist whole_data.txt --gpu 0 --model ../model/1500.h5 --num_feature 6 --exp_name DrC_net
 """
 
 import os
@@ -10,7 +10,7 @@ import numpy as np
 import datetime
 
 import sys
-sys.path.append('/ifs/loni/faculty/shi/spectrum/yqiao/tools/DrC_Net/')
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(sys.argv[0])))))
 
 import DrC_Net as drc
 # import tensorflow as tf

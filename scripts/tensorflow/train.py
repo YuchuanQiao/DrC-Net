@@ -15,7 +15,7 @@ tf.disable_v2_behavior()
 # import keras.backend as K
 
 import sys
-sys.path.append('/ifs/loni/faculty/shi/spectrum/yqiao/tools/DrC_Net/')
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(sys.argv[0])))))
 import DrC_Net as drc
 
 
